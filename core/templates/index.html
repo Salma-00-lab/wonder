@@ -1,0 +1,614 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img src="{% static 'img/hero1.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <div class="content row gy-4">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <h3>Why Choose Wonder?</h3>
+              <p>
+              At Wonder Health Pharmacy, we provide expert care, affordable prices,
+              and a wide range of high-quality products. Our personalized services,
+              including fast delivery and prescription management, ensure your health 
+              needs are met with trust and reliability.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="row gy-4">
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                    <i class="bi bi-clipboard-data"></i>
+                    <h4>Corporis voluptates officia eiusmod</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                    <i class="bi bi-gem"></i>
+                    <h4>Ullamco laboris ladore pan</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                    <i class="bi bi-inboxes"></i>
+                    <h4>Labore consequatur incidid dolore</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+              </div>
+            </div>
+          </div>
+        </div><!-- End  Content-->
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+
+
+          <style>
+            .col-lg-6 .row .col-6 img {
+                border-radius: 15px; /* Rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            .col-lg-6 .row .col-6 img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            }
+        
+            .col-lg-6 .row .col-6:last-child img {
+                position: relative;
+                top: -215px; 
+            }
+        </style>
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <img src="{% static 'img/image1.jpg' %}" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="col-6 mb-3">
+                    <img src="{% static 'img/image2.jpg' %}" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="col-6">
+                    <img src="{% static 'img/image3.jpg' %}" class="img-fluid" alt="Image 3">
+                </div>
+                <div class="col-6">
+                    <img src="{% static 'img/image4.jpg' %}" class="img-fluid" alt="Image 4">
+                </div>
+            </div>
+        </div>
+
+        
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+            Wonder Health Pharmacy is committed to providing exceptional care and service.
+            We focus on offering high-quality medications, expert advice, and personalized
+            support to help you achieve better health and well-being.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Mission Statement</h5>
+                  <p>To be the preferred pharmacy, offering unbeatable prices and outstanding customer service.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Our Vision in Action</h5>
+                  <p>To be Kenya's leading pharmacy, providing exceptional service and trusted healthcare solutions.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-thumbs-up"></i>
+                <div>
+                  <h5>Our Core Principles</h5>
+                  <p>We uphold integrity and ensure speed of execution in every service provided.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    
+
+    <style>
+      #services {
+        margin-top: -200px; /* Moves the section up */
+        padding-top: 0; /* Reduces padding (if needed) */
+      }
+    </style>
+    
+    <!-- Services Section -->
+    <section id="services" class="services section">
+    
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Comprehensive healthcare solutions for your every need.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Health Consultations</h3>
+              </a>
+              <p>Talk to our experts for advice on medication, treatments, and overall wellness, ensuring personalized care.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-pills"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Pharmaceutical Products</h3>
+              </a>
+              <p>A wide selection of high-quality pharmaceuticals to meet all your healthcare requirements.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-hospital-user"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Prescription Management</h3>
+              </a>
+              <p>Coming soon! WhatsApp us your prescriptions and get timely feedback and support.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Over-the-Counter Services</h3>
+              </a>
+              <p>Convenient access to essential medications and expert advice without needing a prescription.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-wheelchair"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Medical Delivery</h3>
+              </a>
+              <p>Coming soon! Contact us for fast, reliable delivery of your medical needs right to your doorstep.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-notes-medical"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Great Retail Prices</h3>
+              </a>
+              <p>Enjoy competitive prices on all our products, ensuring quality healthcare is affordable for everyone.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Services Section -->
+    
+
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments section">
+
+      <!-- Section Title -->
+      <div class="container section-title mt-3" data-aos="fade-up">
+        <h2>Privacy Policy</h2>
+        <p>Protecting your privacy with secure, transparent, ethical practices.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Confidentiality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Security</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Ethnicity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Trustworthy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="departments-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Confidentiality</h3>
+                    <p class="fst-italic">Confidential Information Protection</p>
+                    <p>At Wonder Health Pharmacy, we ensure that all personal and medical information is kept confidential. Your prescriptions, health history, and any personal details you share are protected. We guarantee that your information is not shared without your explicit consent, fostering trust and ensuring your privacy is respected at all times.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Privacy</h3>
+                    <p class="fst-italic">Clear and Open Privacy Practices</p>
+                    <p>Wonder Health Pharmacy prioritizes transparency in its privacy policy. We clearly explain how we collect, use, and protect your personal information. Our policy details what data is collected, how it is used, and if any third parties are involved. This transparency ensures you understand and trust how your information is handled.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Security</h3>
+                    <p class="fst-italic">Robust Security Measures</p>
+                    <p>Wonder Health Pharmacy employs strong security measures to safeguard your personal and medical information. Our systems include encryption, secure servers, and continuous monitoring to prevent unauthorized access or data breaches. With these protective measures, we ensure that your sensitive information remains secure throughout its collection, storage, and use.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ethnicity</h3>
+                    <p class="fst-italic">Ethical Handling of Data</p>
+                    <p>We take an ethical approach to handling your personal information at Wonder Health Pharmacy. We ensure that your data is used only for its intended purposes and never exploited for commercial gain. We follow legal and moral guidelines to ensure integrity and protect your privacy, gaining your trust in our ethical practices.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Trustworthy</h3>
+                    <p class="fst-italic">Building Trust with Privacy Commitment</p>
+                    <p>At Wonder Health Pharmacy, we strive to be a trustworthy partner in your healthcare. Our privacy policy follows all legal requirements, respects your rights, and ensures that your personal and medical information is never misused. We are committed to maintaining confidentiality and ensuring that you feel confident about how we handle your data.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions and helpful information</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Do you offer guidance or consultations on how to use medications properly?</h3>
+                <div class="faq-content">
+                  <p>Yes, we provide professional guidance on proper medication usage to ensure safety and
+                     effectiveness. Our team is always ready to assist with any questions or concerns about
+                      your prescriptions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you sell supplement?</h3>
+                <div class="faq-content">
+                  <p>Yes, we offer a variety of high-quality supplements to support your health and 
+                    wellness needs. Browse our selection for trusted brands and effective products.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you sell pressure drugs at reasonable process?</h3>
+                <div class="faq-content">
+                  <p>We provide essential pressure medications at competitive prices, ensuring affordability 
+                    without compromising on quality. Check with us for current offerings and pricing.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you sell medical gloves?</h3>
+                <div class="faq-content">
+                  <p>Yes, we sell medical gloves in various sizes and materials, designed for both personal 
+                    and professional use. Our gloves meet safety standards and are priced reasonably.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you sell masks?</h3>
+                <div class="faq-content">
+                  <p>Yes, we offer a range of medical and protective masks, including N95 and surgical 
+                    options, to ensure safety. Our masks are effective and priced fairly.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Are you fair in your pricing?</h3>
+                <div class="faq-content">
+                  <p>We prioritize fair pricing and transparency, offering competitive rates without hidden 
+                    costs. Our goal is to make healthcare products accessible to all customers while maintaining quality.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Testimonials</h3>
+            <p>
+            Many positive testimonials but there is always room for improvement
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>SalmaBint Kinoti</h3>
+                        <h4>Data Scientist</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>I explained my condition at Wonder Pharmacy and i was able to get help within a small time</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>GIDEON KELVIN KIRUI</h3>
+                        <h4>Graphic Designer</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Experts in delivering good services</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact us for inquiries, support, and more information.</p>
+      </div><!-- End Section Title -->
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Keneth Matiba road, Raiciri building ground floor, Nairobi, Kenya</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+254 722 2870918</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>wonderhealthpharm@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+        
+
+           
+          <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127640.83159192275!2d36.745118026830234!3d-1.3097059159202715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11517e8d1519%3A0x82861d4bebb6fa29!2sRaiciri%20house!5e0!3m2!1sen!2ske!4v1734103065334!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Google Maps -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+  {% endblock %}
+
